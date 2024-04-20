@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!-- 
+1.Header
+2.Slider
+3.Content
+	a/About
+	b/Tour
+	c/Contact
+	d/Image
+4.Footer
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melody</title>
+    <link rel="icon" href="./assets/img/icon/icon-nhac.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<>
+    <div id="main">
+        <!--Begin: header-->
+        <div id="header" class="Header">
+            <!--Begin nav-->
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+
+                <li>
+                    <a href="#">
+                        More 
+                        <i class="nav-arrow-down ti-angle-down"></i> 
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#zone">Zone price</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+            <!--End nav-->
+            <!--Begin: mobile-menu-->
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+            <!--End: mobile-menu-->
+        </div>
+        <!--End: header-->
+
+        <!--Begin: Slider-->
+        <div class="slider">
+			<div class="list">
+				<div class="item">
+					<img src="./assets/img/Slider/Slider1.png" alt="">
+				</div>
+				<div class="item">
+					<img src="./assets/img/Slider/Slider2.jpg" alt="">
+				</div>
+				<div class="item">
+					<img src="./assets/img/Slider/Slider3.jpg" alt="">
+				</div>
+				<div class="item">
+					<img src="./assets/img/Slider/Slider4.jpg" alt="">
+				</div>
+				<div class="item">
+					<img src="./assets/img/Slider/Slider5.jpg" alt="">
+				</div>
+			</div>
+			<div class="buttons">
+				<button id="prev"><</button>
+				<button id="next">></button>
+			</div>
+			<ul class="dots">
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+        <!--End: Slider-->
+
+        <!--Begin: Content-->
+        <div id="Content">
+            <!--Begin: about section-->
+            <div id="band" class="content-section">
+                <h2 class="section-heading">MELODY</h2>
+                <p class="section-subheading">We love music</p>
+                <p class="about-text">Introducing Melody, a vibrant trio that’s shaking up the music scene. Comprising David, the charismatic guitarist with a knack for soulful melodies, Madison, the powerhouse vocalist whose range defies limits, and Amelia, the rhythmic backbone on drums, they create a sound that’s both fresh and familiar. Their chemistry is palpable, each performance a testament to their shared passion for music that resonates. With Melody, every note tells a story, and every song is an invitation to feel, dance, and dream.</p>
+            </div>
+            <div class="row member-list">
+                <div class="member-item col col-third member-item">
+                    <p class="member-name">David</p>
+                    <img src="./assets/img/Singer/Singer1.png" alt="Name" class="member-img">
+                </div>
+                <div class="member-item col col-third member-item">
+                    <p class="member-name">Madison</p>
+                    <img src="./assets/img/Singer/Singer2.png" alt="Name" class="member-img">
+                </div>
+                <div class="member-item col col-third member-item">
+                    <p class="member-name">Amelia</p>
+                    <img src="./assets/img/Singer/Singer3.png" alt="Name" class="member-img">
+                </div>
+            </div>
+            <!--End: about section-->
+
+            <!--Begin: tour section-->
+            <div id="tour" class="tour-section">
+                <div class="content-section">
+                    <h2 class="section-heading text-white">TOUR DATES</h2>
+                    <p class="section-subheading text-white">Remember to book your tickets!</p>
+                    <div>
+                        <ul class="tickets-list">
+                            <li>September  <span class="sold-out">sold-out</span></li>
+                            <li>October <span class="sold-out">sold-out</span></li>
+                            <li>November <span class="quantity">3</span></li>
+                        </ul>
+                    </div>
+                    <div class="place">
+                        <div class="row place-list">
+                            <div class="col col-third s-col-full mt-16 place-1">
+                                <img src="./assets/img/Places/HoChiMinhcity.jpg" alt="Ho Chi Minh city" class="place-img place1">
+                                <div  class="place-body place-body-fix">
+                                    <h3 class="place-heading">Ho Chi Minh city</h3>
+                                    <p class="place-time">Fri 27 Nov 2024</p>
+                                    <p class="place-desc">We will come here</p>
+                                    <button id="buy-ticket-1" class="place-buy-button s-full-width js-buy-ticket">Buy Tickets</button>
+                                </div>
+                            </div>
+                            <div class="col col-third s-col-full mt-16 place-2">
+                                <img src="./assets/img/Places/DaNangcity.jpg" alt="Da Nang city" class="place-img" >
+                                <div class="place-body">
+                                    <h3 class="place-heading">Da Nang city</h3>
+                                    <p class="place-time">Sat 28 Nov 2024</p>
+                                    <p class="place-desc">We will come here</p>
+                                    <button id="buy-ticket-2" class="place-buy-button s-full-width js-buy-ticket">Buy Tickets</button>
+                                </div>
+                            </div>
+                            <div class="col col-third s-col-full mt-16 place-3">
+                                <img src="./assets/img/Places/HaNoicapital.jpg" alt="Ha Noi capital" class="place-img">
+                                <div class="place-body place-body2 ">
+                                    <h3 class="place-heading">Ha Noi capital</h3>
+                                    <p class="place-time">Sun 29 Nov 2024</p>
+                                    <p class="place-desc">We will come here</p>
+                                    <button id="buy-ticket-3" class="place-buy-button s-full-width js-buy-ticket">Buy Tickets</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <!--End: tour section-->
+
+            <!--Begin: zone-->
+            <div id="zone" class="zone">
+                <img src="./assets/img/Zone/Zone-price.jpg" alt="Zone">
+            </div>
+            <!--End: zone-->
+
+            <!--Begin: contact section-->
+            <div id="contact" class="content-section">
+                <h2 class="section-heading">CONTACT</h2>
+                <p class="section-subheading">Fan? Drop a note!</p>
+                <div class="row contact-content">
+                    <div class="contact-body">
+                        <div class="contact-info">
+                            <p><i class="ti-location-pin"></i>Chica go, US </p>
+                            <p><i class="ti-mobile"></i>Phone: <a href="tel:+00 1515151">+00 15151515</a></p>
+                            <p><i class="ti-email"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
+                        </div>
+                        <div class="img-qr">
+                            <img src="./assets/img/QR/qrCode.png" alt="">
+                        </div>
+                    </div>
+
+                </div>  
+            </div>
+			<!--End: contact section-->
+            
+
+			<!--Begin: modal-->
+            <div class="modal js-modal">
+                <div class="modal-container js-modal-container">
+                    <div class="modal-close js-modal-close">
+                        <i class="ti-close"></i>
+                    </div>
+                    <header class="modal-header">
+                        <i class="modal-bag-icon ti-bag"></i>
+                        Tickets
+                    </header>
+                    <div class="modal-body">
+                        <label for="zoneInput" class="modal-label">
+                            <i class="ti-location-pin"></i>
+                        Zone
+                        </label>
+                        <input id="zoneInput" class="modal-input" placeholder="What zone?">
+                        <label for="quantity" class="modal-label">
+                            <i class="ti-shopping-cart"></i>
+                        Tickets
+                        </label>
+                        <input id="quantity" class="modal-input" placeholder="How many?">
+                        <label for="Email1" class="modal-label">
+                            <i class="ti-user"></i>
+                        Send To
+                        </label>
+                        <input id="email" class="modal-input" placeholder="Enter email">
+
+                        <div class="ticket js-modal-success">
+                            <button id="buy-tickets">
+                                Pay <i class="ti-check"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <footer class="modal-footer">
+                        <p class="modal-help">Need <a href="">help?</a></p>
+                    </footer>
+                </div>
+            </div>
+            <!--End: modal-->
+        </div>
+        <!--End: content-->
+
+        <!--Begin: map-->
+        <div class="map-section">
+            <img src="./assets/img/Map/map.png" alt="Map">    
+        </div>      
+        <!--End: map-->
+    </div>
+	<div id="toast"></div>
+    <script src="./main.js"></script>
+    </div>   
+</body>
+</html>
