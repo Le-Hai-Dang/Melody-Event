@@ -4,6 +4,70 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+/* Begin: Loading Animation */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/img/icon/loadingLogo.jpg);
+    background-size: 90px 90px;
+    background-color: white;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    transition: opacity 0.75s ease, visibility 0.75s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}	
+
+.loader::after {
+    content: "";
+    width: 120px;
+    height: 120px;
+    border: 15px solid #dddd;
+    border-top-color:  rgb(125, 130, 180);
+    border-radius: 50%;
+    animation: loading 0.9s ease-in-out infinite; 
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0turn);
+    }
+    12.5% {
+        transform: rotate(0.125turn);
+    }
+    25% {
+        transform: rotate(0.25turn);
+    }
+    37.5% {
+        transform: rotate(0.375turn);
+    }
+    50% {
+        transform: rotate(0.5turn);
+    }
+    62.5% {
+        transform: rotate(0.625turn);
+    }
+    75% {
+        transform: rotate(0.75turn);
+    }
+    87.5% {
+        transform: rotate(0.875turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
+/* End: Loading Animation */
+
 /* Begin: commond */
 .row{
 	margin-left: -8px; 

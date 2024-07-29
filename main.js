@@ -12,6 +12,14 @@ submit.addEventListener("click", (e) => {
     };
     postData(data);
 });
+//Animation
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+    loader.classList.add('loader-hidden');
+    loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader);
+    });
+});
 //Slider
 let slider = document.querySelector('.slider .list');
 let items = document.querySelectorAll('.slider .list .item');
