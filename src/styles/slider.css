@@ -1,0 +1,78 @@
+/* Slider Styles */
+.slider {
+    width: 1600px;
+    max-width: 100vw;
+    height: 1000px; /* Increased height */
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .list {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slider .item {
+    flex: 0 0 100%;
+    height: 100%;
+}
+
+.slider .list img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Remove the buttons styles */
+.slider .buttons {
+    display: none;
+}
+
+.slider .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: width 0.5s;
+}
+
+.slider .dots li.active {
+    width: 30px;
+}
+
+/* Keyframe animations for smooth transitions */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
